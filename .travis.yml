@@ -1,6 +1,21 @@
 language: java
 sudo: false # faster builds
 
+jobs:
+  - sudo: required
+    group: edge
+    arch: arm64-graviton2
+    virt: lxd
+    dist: xenail
+    jdk: openjdk11
+
+  - sudo: required
+    group: edge
+    arch: arm64-graviton2
+    virt: lxd
+    dist: xenail
+    jdk: openjdk8
+    
 jdk:
   - openjdk11
   - openjdk8
