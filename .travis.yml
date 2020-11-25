@@ -5,14 +5,14 @@ jobs:
   - sudo: required
     group: edge
     arch: arm64-graviton2
-    virt: vm
+    virt: lxd
     dist: focal
     jdk: openjdk11
 
   - sudo: required
     group: edge
     arch: arm64-graviton2
-    virt: vm
+    virt: lxd
     dist: focal
     jdk: openjdk8
     
